@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e85d5d64-735a-4992-99d9-46c65328ab45" activeEnvironment="Default" name="WSO2 Hospital Rest Service" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="caf3a8fc-ff75-43d5-b8ac-2aaed9422b1d" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://127.0.0.1:8280" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://192.168.0.27:8280</con:endpoint><con:endpoint>http://localhost:8080/reserve</con:endpoint></con:endpoints><con:resource name="Reserve" path="/hospitalservice/reserve" id="9da516b3-3ae3-4de9-a504-c2d95f9c807b"><con:settings/><con:parameters/><con:method name="Reserve Request" id="fd4bde98-13bf-43d9-a519-59074bd849aa" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:res="http://127.0.0.1/hospitalservice/reserve">res:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=iso-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/xml</con:mediaType><con:status>502 500</con:status><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/xml</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=UTF-8</con:mediaType><con:status>403</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:res="http://127.0.0.1/hospitalservice/reserve">res:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>500</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:res="http://127.0.0.1/hospitalservice/reserve">res:Fault</con:element></con:representation><con:request name="Request 1" id="888b49f7-769e-459f-af00-be3b9e02c9d5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.0.27:8280</con:endpoint><con:request>{
+    "reserveRequest": {
+        "patientDetails": {
+            "name": "Mark Smith",
+            "dob": "1990-03-19",
+            "ssn": "ASJK-asnda-AAA",
+            "address": "100 MAIN ST, SEATTLE WA 98104, USA",
+            "phone": "0770596754",
+            "email": "marksm@mymail.com"
+        },
+        "doctor": "thomas collins",
+        "hospital": "grand oak community hospital",
+        "category": "surgery",
+        "cardNo": "7844481124110331"
+    }
+}</con:request><con:originalUri>http://127.0.0.1/hospitalservice/reserve</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="9ef18c98-154f-4c9d-9956-b1cc2c8f47c3" name="Hospital Reservation Service Test Suite"><con:description>TestSuite generated for REST Service [http://127.0.0.1:8280]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="ea861547-b8f3-425f-bcbe-f73334659cee" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Reserve TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [Reserve] located at [/hospitalservice/reserve]</con:description><con:settings/><con:testStep type="restrequest" name="ReserveRequest" id="068221d7-de05-4341-92b4-f8da65ba541b"><con:settings/><con:config service="http://127.0.0.1:8280" resourcePath="/hospitalservice/reserve" methodName="Reserve Request" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ReserveRequest" id="888b49f7-769e-459f-af00-be3b9e02c9d5" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080/reserve</con:endpoint><con:request>{
+    "reserveRequest": {
+        "patientDetails": {
+            "name": "Mark",
+            "dob": "1990-03-19",
+            "ssn": "ASJK-asnda-AAA",
+            "address": "100 MAIN ST, SEATTLE WA 98104, USA",
+            "phone": "0770596754",
+            "email": "marksm@mymail.com"
+        },
+        "doctor": "thomas collins",
+        "hospital": "grand oak community hospital",
+        "category": "surgery",
+        "cardNo": "7844481124110331"
+    }
+}</con:request><con:originalUri>http://127.0.0.1/hospitalservice/reserve</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy_ExecuteAndJsonAssertions" id="58a34249-25ef-4214-a282-aa4f4b85657b"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def jsonSlurper = new JsonSlurper()
+testRunner.testCase.getTestStepByName('ReserveRequest').run(testRunner,context)
+def response = context.expand('${ReserveRequest#Response}')
+def resultJson = jsonSlurper.parseText(response)
+log.info "Appointment Number : " +  resultJson.appointmentNumber
+log.info "Hospital Name : " + resultJson.Doctor.hospital
+assert 'grand oak community hospital' == resultJson.Doctor.hospital, 'Hospital Name Doesnt Match'
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy_Mock_Reserve_ExecuteAndJsonAssertions" id="29a41a9f-cfac-4bf5-a1d1-48e0857dd455"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def jsonSlurper = new JsonSlurper()
+testRunner.testCase.getTestStepByName('ReserveRequest').run(testRunner,context)
+def response = context.expand('${ReserveRequest#Response}')
+def resultJson = jsonSlurper.parseText(response)
+log.info "Appointment Number : " +  resultJson.appointmentNumber
+log.info "Hospital Name : " + resultJson.Doctor.hospital
+assert 'SouthEnd Univeristy Hospital hospital' == resultJson.Doctor.hospital, 'Hospital Name Doesnt Match'
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy_Mock_Fail_ExecuteAndJsonAssertions" id="931e46e1-ab01-4e2f-9aa7-67fbd9dc8588"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def jsonSlurper = new JsonSlurper()
+testRunner.testCase.getTestStepByName('ReserveRequest').run(testRunner,context)
+def response = context.expand('${ReserveRequest#Response}')
+def resultJson = jsonSlurper.parseText(response)
+assert 'Failed Response' == resultJson.Doctor.name, 'Name Doesnt Match'
+</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:restMockService id="b65cc7b6-ce7f-42d3-8a3f-34322b190f2f" port="8080" path="/reserve" host="localhost" name="Hospital Rest Mock Service" docroot=""><con:settings/><con:properties/><con:restMockAction name="/hospitalservice/reserve" method="POST" resourcePath="/hospitalservice/reserve" id="f6fff2f1-c938-44c5-ac17-cb8952f55dd8"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>import groovy.json.JsonSlurper 
+
+def jsonSlurper = new JsonSlurper()
+
+
+def requestContent = mockRequest.requestContent
+log.info requestContent
+def jsonContent = jsonSlurper.parseText(requestContent)
+log.info jsonContent.reserveRequest.patientDetails.name
+if(jsonContent.reserveRequest.patientDetails.name.contains('Mark'))
+{
+	return "Response Fail"
+}
+else 
+{
+	return "Reserve Mock"
+}
+
+</con:dispatchPath><con:response name="Reserve Mock" id="03e517ba-f549-4d3c-a891-8c80ec975da0" httpResponseStatus="200" mediaType="application/json"><con:settings/><con:responseContent>{
+   "appointmentNumber": 100001,
+   "Doctor":    {
+      "fee": 10000,
+      "name": "Naga Kishore",
+      "availability": "9.00 a.m - 11.00 a.m",
+      "hospital": "SouthEnd Univeristy Hospital hospital",
+      "category": "surgery"
+   },
+   "Payment":    {
+      "patient": "Mark Smith",
+      "actualFee": 7000,
+      "discount": 0,
+      "discounted": 7000,
+      "paymentID": "50b2f8eb-0af0-4377-9c1e-e76f850dc986",
+      "status": "Settled"
+   }
+}</con:responseContent></con:response><con:response name="Response Fail" id="77f2a4f9-7a64-4eab-90cd-982908a89bc1" httpResponseStatus="500" mediaType="application/json"><con:settings/><con:responseContent>{
+   "appointmentNumber": 100001,
+   "Doctor":    {
+      "fee": 10000,
+      "name": "Failed Response",
+      "availability": "9.00 a.m - 11.00 a.m",
+      "hospital": "SouthEnd Univeristy Hospital hospital",
+      "category": "surgery"
+   },
+   "Payment":    {
+      "patient": "Mark Smith",
+      "actualFee": 7000,
+      "discount": 0,
+      "discounted": 7000,
+      "paymentID": "50b2f8eb-0af0-4377-9c1e-e76f850dc986",
+      "status": "Settled"
+   }
+}</con:responseContent></con:response></con:restMockAction></con:restMockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

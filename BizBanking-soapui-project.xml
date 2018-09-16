@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3eddcf55-31a0-432e-a50f-598393a6fba1" activeEnvironment="Default" name="BizBanking" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="282ce396-c2c4-402d-a210-70d9a86006d4" wsaVersion="NONE" name="BLZServiceSOAP11Binding" type="wsdl" bindingName="{http://thomas-bayer.com/blz/}BLZServiceSOAP11Binding" soapVersion="1_1" anonymous="optional" definition="http://www.thomas-bayer.com/axis2/services/BLZService?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://www.thomas-bayer.com/axis2/services/BLZService?wsdl"><con:part><con:url>http://www.thomas-bayer.com/axis2/services/BLZService?wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://thomas-bayer.com/blz/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://thomas-bayer.com/blz/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:documentation>BLZService</wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://thomas-bayer.com/blz/">
+      <xsd:element name="getBank" type="tns:getBankType"/>
+      <xsd:element name="getBankResponse" type="tns:getBankResponseType"/>
+      <xsd:complexType name="getBankType">
+        <xsd:sequence>
+          <xsd:element name="blz" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="getBankResponseType">
+        <xsd:sequence>
+          <xsd:element name="details" type="tns:detailsType"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="detailsType">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="bezeichnung" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="bic" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="ort" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="plz" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="getBank">
+    <wsdl:part name="parameters" element="tns:getBank"/>
+  </wsdl:message>
+  <wsdl:message name="getBankResponse">
+    <wsdl:part name="parameters" element="tns:getBankResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="BLZServicePortType">
+    <wsdl:operation name="getBank">
+      <wsdl:input message="tns:getBank"/>
+      <wsdl:output message="tns:getBankResponse" wsaw:Action="http://thomas-bayer.com/blz/BLZService/getBankResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BLZServiceSOAP11Binding" type="tns:BLZServicePortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getBank">
+      <soap:operation style="document" soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BLZServiceSOAP12Binding" type="tns:BLZServicePortType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getBank">
+      <soap12:operation style="document" soapAction=""/>
+      <wsdl:input>
+        <soap12:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BLZServiceHttpBinding" type="tns:BLZServicePortType">
+    <http:binding verb="POST"/>
+    <wsdl:operation name="getBank">
+      <http:operation location="BLZService/getBank"/>
+      <wsdl:input>
+        <mime:content part="getBank" type="text/xml"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="getBank" type="text/xml"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BLZService">
+    <wsdl:port name="BLZServiceSOAP11port_http" binding="tns:BLZServiceSOAP11Binding">
+      <soap:address location="http://www.thomas-bayer.com/axis2/services/BLZService"/>
+    </wsdl:port>
+    <wsdl:port name="BLZServiceSOAP12port_http" binding="tns:BLZServiceSOAP12Binding">
+      <soap12:address location="http://www.thomas-bayer.com/axis2/services/BLZService"/>
+    </wsdl:port>
+    <wsdl:port name="BLZServiceHttpport" binding="tns:BLZServiceHttpBinding">
+      <http:address location="http://www.thomas-bayer.com/axis2/services/BLZService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/BLZService</con:endpoint><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint></con:endpoints><con:operation id="4c2f3fe1-d0f0-449c-9eac-a04dbee18274" isOneWay="false" action="" name="getBank" bindingOperationName="getBank" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6a90c56c-2f4e-4cf0-9d46-ca8ebf44e941" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.thomas-bayer.com/axis2/services/BLZService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <blz:getBank>\r
+         <blz:blz>32470077</blz:blz>\r
+      </blz:getBank>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://thomas-bayer.com/blz/BLZServicePortType/getBankRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="8ffe9944-9ef3-418e-b753-84b79db93de2" name="ScriptLibrary"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="31346be1-9efe-4938-a114-52bd69cba35c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Groovy Scripts" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy_Reusable_TestSuiteAndTestCaseDetails" id="c38a5218-8217-4baf-bac4-e80ca99145c5"><con:settings/><con:config><script>class PrintTestDetails  {
+
+    def context
+    def testRunner
+    def log
+
+    def PrintTestDetails(log,testRunner,context)
+    {
+    	 this.log = log
+    	 this.context = context
+    	 this.testRunner = testRunner
+     }
+
+    def displayDetails(def PrintThisToo) {
+        log.info 'Name of the test case is :'+testRunner.testCase.name
+        log.info 'Name of the test suite is : '+testRunner.testCase.testSuite.name
+        log.info PrintThisToo
+    }
+}
+
+context.setProperty("displayDetails" , new PrintTestDetails(log,testRunner,context))</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy_ExecuteAndAssert" id="eca6ec48-7d79-4754-8d16-9be043354864"><con:settings/><con:config><script>import groovy.util.XmlSlurper
+
+//def sl = new 
+
+def testStepName = "getBankRequest"
+def testStep = testRunner.testCase.testSuite.project.getTestSuiteByName('BLZ Services Test Suite').getTestCaseByName('Get Bank Test Case').getTestStepByName('getBankRequest')
+def resposne = testStep.run(testRunner,context)
+log.info resposne
+
+//Access XMl Content
+def xmlSlurper = new XmlSlurper()
+def envelope = xmlSlurper.parseText(resposne.responseContentAsXml)
+log.info envelope
+
+String expectedBICCode = 'DEUTDEDD324'
+String actualBICCode = envelope.Body.getBankResponse.details.bic
+
+log.info actualBICCode
+assert expectedBICCode ==  actualBICCode , "Bic Not Matching , Expected Value is $expectedBICCode' , but actual value is $actualBICCode" 
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy_Reusable_SqlConnection" id="7bd6c4eb-dfd7-40f5-a493-24601d3a07aa" disabled="true"><con:settings/><con:config><script>import groovy.sql.Sql
+sql = Sql.newInstance("jdbc:sqlserver://servername\\inst1/databaseName", 
+     "username", "password", "com.microsoft.sqlserver.jdbc.SQLServerDriver")
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy_Reusable_GenerateRandomNumber" id="91afbbbd-f134-4bf5-ab7a-ca039d0f954a" disabled="true"><con:settings/><con:config><script>import java.util.Random
+class RandomNumber{
+
+Random random = new Random()
+
+	  def context
+   	  def testRunner
+  	  def log
+
+    def RandomNumber(log,testRunner,context)
+    {
+    	 this.log = log
+    	 this.context = context
+    	 this.testRunner = testRunner
+     }
+	
+
+}
+</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="10e547c1-3782-4584-bbae-a436499b050a" name="BLZ Services Test Suite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="ad46ed79-f1f6-4520-926f-b73a32a58d26" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Get Bank Test Case" searchProperties="true"><con:settings/><con:testStep type="request" id="e502b387-8b34-4e5f-9a60-3e0a1239c48a" name="getBankRequest"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>BLZServiceSOAP11Binding</con:interface><con:operation>getBank</con:operation><con:request name="getBankRequest" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="44451ac0-94d3-4a24-bbf8-94b01f01c92c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/BLZService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:blz="http://thomas-bayer.com/blz/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <blz:getBank>\r
+         <blz:blz>32470077</blz:blz>\r
+      </blz:getBank>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="ccc92e17-131d-496d-98e2-8c7767969815" name="SOAP Response"/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://thomas-bayer.com/blz/BLZServicePortType/getBankRequest"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script _ Test Artifacts" id="020ba422-6cbd-46e7-b378-2bda23adb7fe"><con:settings/><con:config><script>// Project Artifcats
+
+//testCase
+log.info testRunner.testCase.name
+//testSuite
+log.info testRunner.testCase.testSuite.name
+//Project Name
+log.info testRunner.testCase.testSuite.project.name
+//WorkSpace Name
+log.info testRunner.testCase.testSuite.project.workspace.name
+//List of all the test suites in  a project
+def testSuiteMap = testRunner.testCase.testSuite.project.testSuites
+testSuiteMap.each{
+	tsEntry ->
+	log.info tsEntry.key
+	log.info tsEntry.value
+	}</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script _ Context_Calling Reusable Scripts" id="79861b0e-029b-439c-bc98-3e69f432ff9a"><con:settings/><con:config><script>def suiteRef = testRunner.testCase.testSuite.project.testSuites["ScriptLibrary"]
+def reusableStep = suiteRef.testCases["Groovy Scripts"].testSteps["Groovy_Reusable_TestSuiteAndTestCaseDetails"]
+
+reusableStep.run(testRunner,context)
+def testDetailsObject = context.displayDetails
+testDetailsObject.displayDetails("This is HMRC Test")
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script_ Jars_Calling Reusable" id="95505ff6-b151-47ea-adcc-9fc2c477afca"><con:settings/><con:config><script>import ScriptLibrary
+def scripts = new ScriptLibrary(context:context, log:log, testRunner:testRunner)
+scripts.printTestDetails("This is HMRC test")
+</script></con:config></con:testStep><con:testStep type="jdbc" name="JDBC Request" id="fec731ef-6021-435c-b36d-6f2e93641bc7"><con:settings/><con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</con:driver><con:connectionString>jdbc:sqlserver://servername\myDB;databaseName?user=Test&amp;password=Pass</con:connectionString><con:properties/></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:mockService id="d8ec744f-bb17-4c58-a48e-a65c233fd294" port="8080" path="/BLZService" host="localhost" name="BLZMocks" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="getBank" id="06df619e-005b-457c-87a3-b68267207d59" interface="BLZServiceSOAP11Binding" operation="getBank"><con:settings/><con:defaultResponse>15091704 Response</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath>import com.eviware.soapui.support.GroovyUtils
+
+def groovyUtils = new GroovyUtils(context)
+
+//Read Request XML
+def requestMessage = mockRequest.requestContent
+def requestXML = groovyUtils.getXmlHolder(requestMessage)
+
+//Get the BLZ code
+def blzCodeFromRequest = requestXML.getNodeValue('//blz:blz')
+
+log.info "Blz code =  $blzCodeFromRequest"
+
+//Response is selected based on BLZ code
+return "$blzCodeFromRequest Response"</con:dispatchPath><con:response name="32470077 Response" id="f64f4d96-fa00-4ebe-b869-533d61512104" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <ns1:getBankResponse xmlns:ns1="http://thomas-bayer.com/blz/">
+         <ns1:details>
+            <ns1:bezeichnung>Naga Appari</ns1:bezeichnung>
+            <ns1:bic>Basildon</ns1:bic>
+            <ns1:ort>Automation Tester</ns1:ort>
+            <ns1:plz>47512</ns1:plz>
+         </ns1:details>
+      </ns1:getBankResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="{http://schemas.xmlsoap.org/wsdl/http/}//thomas-bayer.com/blz/BLZService/getBankResponse"/></con:response><con:response name="15091704 Response" id="f64f4d96-fa00-4ebe-b869-533d61512104" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <ns1:getBankResponse xmlns:ns1="http://thomas-bayer.com/blz/">
+         <ns1:details>
+            <ns1:bezeichnung>HMRC</ns1:bezeichnung>
+            <ns1:bic>South End on Sea</ns1:bic>
+            <ns1:ort>Automation Tester</ns1:ort>
+            <ns1:plz>47512</ns1:plz>
+         </ns1:details>
+      </ns1:getBankResponse>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="{http://schemas.xmlsoap.org/wsdl/http/}//thomas-bayer.com/blz/BLZService/getBankResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
